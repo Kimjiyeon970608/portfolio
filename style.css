@@ -1,3 +1,88 @@
+#menu {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end; /* Changed to align menu items to the right */
+    align-items: center;
+    padding: 15px 0;
+    margin: 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    max-width: 100%;
+    width: 100%;
+    padding-right: 2rem;
+}
+
+#menu li{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding: 10px 3rem;
+    transition: transform 0.3s ease;
+}
+
+#menu li:hover {
+    transform: translateY(-2px);
+}
+
+/* Logo styles */
+#menu li.logo-item {
+    margin-right: auto; /* Push other menu items to the right */
+    padding-left: 2rem;
+}
+
+#menu li.logo-item a {
+    display: flex;
+    align-items: center;
+    font-family: 'Freesentation', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+#menu li.logo-item:hover {
+    transform: none;
+}
+
+.nav-logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+#menu li a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+#menu li a:hover {
+    color: #888;
+}
+
+#menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #888;
+    transition: width 0.3s ease;
+}
+
+/* Remove underline effect from logo */
+#menu li.logo-item a::after {
+    display: none;
+}
+
+#menu li a:hover::after {
+    width: 100%;
+}
 .section-title-wrapper {
     display: flex;
     overflow: hidden;
@@ -24,8 +109,7 @@
 }
 .location-buttons {
     display: flex;
-    gap: 16px;
-    margin-top: 12px;
+    gap: 50px;
 }
 
 .loc-btn {
@@ -39,7 +123,7 @@
     padding: 15px 50px;
     cursor: pointer;
     transition: background 0.2s;
-    margin-top: 100px;
+    margin-top: 30px;
     text-decoration: none;
 }
 
@@ -58,9 +142,15 @@ body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
+    padding-top: 70px; /* Added padding to account for fixed navigation */
 }
 
 /* Navigation */
+header {
+    width: 100%;
+}
+
+/* Legacy navbar styles - you can remove these if not needed */
 .navbar {
     position: fixed;
     top: 0;
@@ -132,6 +222,7 @@ body {
     padding: 120px 40px 80px;
     max-width: 1400px;
     margin: 10px auto;
+    padding-top: 80px; /* Adjusted to account for fixed menu */
 }
 
 .hero-content {
@@ -145,7 +236,7 @@ body {
     display: block;
     margin-top: 0;
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 70px;
 }
 
 .lines {
@@ -196,7 +287,6 @@ div{
     line-height: 1.4;
     margin-bottom: 40px;
     color: #000000;
-    margin-top: 100px;
 }
 .hero-title p{
     font-size: 20px;
@@ -207,7 +297,6 @@ div{
     font-size: 24px;
     font-weight: 400;
     line-height: 1.4;
-    margin-top: 100px;
     color: #000000;
 }
 .location p{
@@ -267,7 +356,7 @@ div{
 
 .about-description {
     font-family: 'Paperlogy', sans-serif;
-    font-size: 18px;
+    font-size: 50px;
     line-height: 1.6;
     color: #333;
     margin-bottom: 40px;
