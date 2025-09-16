@@ -34,6 +34,46 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon/favicon.png">
+    <style>
+        .charts {
+            width: 80%;
+            margin: 3rem auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .charts .chart {
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .charts .chart h3 {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -100%);
+        }
+
+        svg {
+            width: 220px;
+            height: 220px;
+        }
+
+        circle {
+            fill: #ffe2e2;
+            stroke-width: 20;
+            stroke: rgb(255, 85, 85);
+            stroke-dashoffset: 628;
+            stroke-dasharray: 628;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            stroke-linecap: round;
+        }
+
+        section {
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,7 +82,8 @@
     <header>
         <nav>
             <ul id="menu">
-                <li class="logo-item"><a href="#section0"><img src="favicon/favicon.png" alt="Logo" class="nav-logo">JIYEON</a></li>
+                <li class="logo-item"><a href="#section0"><img src="favicon/favicon.png" alt="Logo"
+                            class="nav-logo">JIYEON</a></li>
                 <li><a href="#section0" class="anchor">HOME</a></li>
                 <li><a href="#section1" class="anchor">ABOUT</a></li>
                 <li><a href="#section2" class="anchor">PROJECT</a></li>
@@ -58,8 +99,9 @@
                         <span class="category">디자인을</span>
                         <span class="category">그리다</span>
                         <div class="location-buttons">
-                                    <a href="https://drive.google.com/file/d/1-2MnXGdTGRWxsNkhycHVIaNZnZ5hacGH/view?usp=sharing" button class="loc-btn">이력서 보기</a></button>
-                                    <a href="https://github.com/Kimjiyeon970608" button class="loc-btn">깃허브 가기</a></button>
+                            <a href="https://drive.google.com/file/d/1-2MnXGdTGRWxsNkhycHVIaNZnZ5hacGH/view?usp=sharing"
+                                button class="loc-btn">이력서 보기</a></button>
+                            <a href="https://github.com/Kimjiyeon970608" button class="loc-btn">깃허브 가기</a></button>
                         </div>
                     </div>
                 </div>
@@ -67,7 +109,7 @@
                     <img src="images/main.jpg" alt="Photography" class="main-image">
                 </div>
             </div>
-        </section>  
+        </section>
     </header>
 
     <!-- About Section -->
@@ -85,11 +127,11 @@
                     <p class="about-description">
                         세심함과 소통 경험을 바탕으로 사용자 친화적 웹퍼블리셔로 성장하겠습니다.
                     </p>
-                     <h1 class="hero-title">
+                    <h1 class="hero-title">
                         <b>PROFILE</b><br>
                         <p>
-                            이    름 : 김지연<br>
-                            나    이 : 1997.06.08<br>
+                            이 름 : 김지연<br>
+                            나 이 : 1997.06.08<br>
                             거주지 : 서울시 은평구<br>
                             휴대폰 : 010-6282-5169<br>
                             이메일 : ne2210ne@naver.com<br>
@@ -107,20 +149,33 @@
                             유치원 정교사<br>
                         </p>
                     </h1>
-                    </div>
-                    
-                    <div class="contact-wrapper">
-                        <a href="mailto:kjy6282@email.com" class="contact-btn">#CONTACT ME</a>
-                    </div>
                 </div>
-                <div class="about-images">
-                    <img src="https://cdn.prod.website-files.com/672a63d8668b525e817a099d/672a66312946236efcb46b7d_Main%20Images%20(2).jpg"
-                        alt="Photography 2" class="about-img-1">
-                    <img src="https://cdn.prod.website-files.com/672a63d8668b525e817a099d/672a662957e0527eeed1e21f_Main%20Images%20(3).jpg"
-                        alt="Photography 3" class="about-img-2">
+
+                <div class="contact-wrapper">
+                    <a href="mailto:kjy6282@email.com" class="contact-btn">#CONTACT ME</a>
                 </div>
             </div>
+            <section>
+                <h2>MY SKILL</h2>
+                <div class="charts">
+                    <div class="chart">
+                        <h3 data-num="20">0</h3>
+                        <svg>
+                            <circle cx="110" cy="110" r="100"></circle>
+                        </svg>
+                    </div> <!-- .chart -->
+
+                </div><!-- .charts -->
+            </section>
+            <div class="about-images">
+                <img src="https://cdn.prod.website-files.com/672a63d8668b525e817a099d/672a66312946236efcb46b7d_Main%20Images%20(2).jpg"
+                    alt="Photography 2" class="about-img-1">
+                <img src="https://cdn.prod.website-files.com/672a63d8668b525e817a099d/672a662957e0527eeed1e21f_Main%20Images%20(3).jpg"
+                    alt="Photography 3" class="about-img-2">
+            </div>
+            </div>
         </section>
+
         <!-- Projects Section -->
         <section id="section2" class="projects">
             <div class="projects-header">
@@ -240,6 +295,57 @@
             });
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const totalLength = 628;
+        const animation = $('.charts');
+        const progressBox = $('.chart');
+        function ani() {
+            progressBox.each(function () {
+
+
+                let tg = $(this);
+                let title = tg.find('h3');
+                let tgNum = title.attr('data-num');
+                let line = tg.find('circle');
+                $({ rate: 0 }).animate(
+                    { rate: tgNum },
+                    {
+                        duration: 2000,
+                        progress: function () {
+                            let now = this.rate;
+                            let amount = totalLength - (totalLength * now) / 100;
+                            title.text(Math.floor(now))
+                            line.css({ strokeDashoffset: amount })
+                        }
+                    }
+                )
+
+            })
+        }
+        ScrollTrigger.create({
+            trigger: '.charts',
+            start: 'top 80%', /*.charts 상단에서 뷰포트 80%에서 시작*/
+            once: true,
+            onEnter: function () {
+                ani()
+            }
+        })
+
+
+
+    </script>
+    <script>
+        const line = document.querySelector('svg line');
+        console.log(line.getTotalLength());
+
+    </script>
+
 </body>
 
 </html>
