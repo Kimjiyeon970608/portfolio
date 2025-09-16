@@ -3,13 +3,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 // Page load animations
 window.addEventListener('load', () => {
-    // Navbar animation
-    gsap.from('.navbar', {
-        y: -100,
-        opacity: 0,
-        duration: 1,
-        ease: 'power2.out'
-    });
 
     // Hero section animations
     gsap.from('.hero-categories .category', {

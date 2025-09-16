@@ -1,7 +1,7 @@
 #menu {
     display: flex;
     list-style: none;
-    justify-content: flex-end; /* Changed to align menu items to the right */
+    justify-content: flex-end; 
     align-items: center;
     padding: 15px 0;
     margin: 0;
@@ -31,8 +31,8 @@
 
 /* Logo styles */
 #menu li.logo-item {
-    margin-right: auto; /* Push other menu items to the right */
-    padding-left: 2rem;
+    margin-right: auto; 
+    padding-left: 4rem;
 }
 
 #menu li.logo-item a {
@@ -151,7 +151,7 @@ body {
     color: #333;
     line-height: 1.6;
     overflow-x: hidden;
-    padding-top: 70px; /* Added padding to account for fixed navigation */
+    padding-top: 70px; 
 }
 
 /* Navigation */
@@ -231,7 +231,7 @@ header {
     padding: 120px 40px 80px;
     max-width: 1400px;
     margin: 10px auto;
-    padding-top: 80px; /* Adjusted to account for fixed menu */
+    padding-top: 80px; 
 }
 
 .hero-content {
@@ -301,23 +301,7 @@ div{
     font-size: 20px;
     color: black;
 }
-.location {
-    font-family: 'Paperlogy', sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.4;
-    color: #000000;
-    margin-bottom: 20px;
-}
-.location p{
-    font-size: 20px;
-    color: black;
 
-}
-
-.location span:first-child {
-    margin-right: 10px;
-}
 
 .hero-image {
     position: relative;
@@ -341,6 +325,15 @@ div{
     grid-template-columns: 1fr 1fr;
     gap: 80px;
     align-items: start;
+}
+
+.section0{
+box-sizing: border-box;
+position: absolute;
+width: 887px;
+height: 865px;
+opacity: 0.5;
+border: 1px dashed #A9A9A9;
 }
 
 .section-title-wrapper {
