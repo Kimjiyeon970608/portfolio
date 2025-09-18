@@ -224,7 +224,24 @@ header {
     color: #666;
 }
 
+.charts {
+            width: 80%;
+            margin: 3rem auto;
+            display: flex;
+            justify-content: center;
+        }
 
+        .charts .chart {
+            margin: 0 20px;
+            position: relative;
+        }
+
+        .charts .chart h3 {
+            text-align: center;
+            line-height: 110px;
+            font-size: 18px;
+            color: #333;
+        }
 
 /* Hero Section */
 .hero {
@@ -406,6 +423,48 @@ border: 1px dashed #A9A9A9;
     object-fit: cover;
 }
 
+/* Marquee Styles */
+        .marquee-section {
+            width: 100%;
+            padding: 2rem 0;
+            background: #f8f9fa;
+            overflow: hidden;
+        }
+
+        .marquee {
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            white-space: nowrap;
+            gap: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .marquee-content {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .marquee-content span {
+            font-family: "Freesentation", sans-serif;
+            font-size: clamp(3rem, 8vw, 12rem);
+            font-weight: 700;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .marquee:nth-child(odd) .marquee-content span {
+            color: #000000;
+        }
+
+        .marquee:nth-child(even) .marquee-content span {
+            color: #000000;
+        }
+
+        .marquee:nth-child(3) .marquee-content span {
+            color: #000000;
+        }
 /* Projects Section */
 .projects {
     padding: 80px 40px;

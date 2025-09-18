@@ -34,46 +34,8 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon/favicon.png">
-    <style>
-        .charts {
-            width: 80%;
-            margin: 3rem auto;
-            display: flex;
-            justify-content: center;
-        }
 
-        .charts .chart {
-            margin: 0 20px;
-            position: relative;
-        }
 
-        .charts .chart h3 {
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -100%);
-        }
-
-        svg {
-            width: 220px;
-            height: 220px;
-        }
-
-        circle {
-            fill: #ffe2e2;
-            stroke-width: 20;
-            stroke: rgb(255, 85, 85);
-            stroke-dashoffset: 628;
-            stroke-dasharray: 628;
-            transform: rotate(-90deg);
-            transform-origin: 50% 50%;
-            stroke-linecap: round;
-        }
-
-        section {
-            height: 100vh;
-        }
-    </style>
 </head>
 
 <body>
@@ -113,47 +75,42 @@
     </header>
 
     <!-- About Section -->
-
     <main>
         <section id="section1" class="about">
-            <div class="about-content">
-                <div class="about-text">
-                    <div class="section-title-wrapper">
-                        <h2 class="section-title">#ABOUT ME</h2>
-                        <h2 class="section-title">#ABOUT ME</h2>
-                        <h2 class="section-title">#ABOUT ME</h2>
+            <div class="marquee" wb-data="marquee" duration="20"
+                data-texts='["ABOUT ME", "ABOUT ME", "ABOUT ME", "ABOUT ME"]'>
+                <div class="marquee-content"></div>
+            </div>
+            <p class="about-description">
+                세심함과 소통 경험을 바탕으로 사용자 친화적 웹퍼블리셔로 성장하겠습니다.
+            </p>
+            <h1 class="hero-title">
+                <b>PROFILE</b><br>
+                <p>
+                    이 름 : 김지연<br>
+                    나 이 : 1997.06.08<br>
+                    거주지 : 서울시 은평구<br>
+                    휴대폰 : 010-6282-5169<br>
+                    이메일 : ne2210ne@naver.com<br>
+                </p>
+                <br>
+                <b>EDUCATION</b>
+                <p>
+                    2021.02 서정대학교 유아교육과 졸업<br>
+                    2025.10 AI를 활용한 영상제작&코딩 개발기획자 양성과정 수료
+                </p>
+                <br>
+                <b>QUALIFICATIONS</b>
+                <p>
+                    간호 조무사<br>
+                    유치원 정교사<br>
+                </p>
+            </h1>
+            </div>
 
-                    </div>
-                    <p class="about-description">
-                        세심함과 소통 경험을 바탕으로 사용자 친화적 웹퍼블리셔로 성장하겠습니다.
-                    </p>
-                    <h1 class="hero-title">
-                        <b>PROFILE</b><br>
-                        <p>
-                            이 름 : 김지연<br>
-                            나 이 : 1997.06.08<br>
-                            거주지 : 서울시 은평구<br>
-                            휴대폰 : 010-6282-5169<br>
-                            이메일 : ne2210ne@naver.com<br>
-                        </p>
-                        <br>
-                        <b>EDUCATION</b>
-                        <p>
-                            2021.02 서정대학교 유아교육과 졸업<br>
-                            2025.10 AI를 활용한 영상제작&코딩 개발기획자 양성과정 수료
-                        </p>
-                        <br>
-                        <b>QUALIFICATIONS</b>
-                        <p>
-                            간호 조무사<br>
-                            유치원 정교사<br>
-                        </p>
-                    </h1>
-                </div>
-
-                <div class="contact-wrapper">
-                    <a href="mailto:kjy6282@email.com" class="contact-btn">#CONTACT ME</a>
-                </div>
+            <div class="contact-wrapper">
+                <a href="mailto:kjy6282@email.com" class="contact-btn">#CONTACT ME</a>
+            </div>
             </div>
             <section>
                 <h2>MY SKILL</h2>
@@ -164,9 +121,9 @@
                             <circle cx="110" cy="110" r="100"></circle>
                         </svg>
                     </div> <!-- .chart -->
-
                 </div><!-- .charts -->
             </section>
+            <br>
             <div class="about-images">
                 <img src="https://cdn.prod.website-files.com/672a63d8668b525e817a099d/672a66312946236efcb46b7d_Main%20Images%20(2).jpg"
                     alt="Photography 2" class="about-img-1">
@@ -178,12 +135,10 @@
 
         <!-- Projects Section -->
         <section id="section2" class="projects">
-            <div class="projects-header">
-                <div class="section-title-wrapper">
-                    <h2 class="section-title">#PROJRECTS</h2>
-                    <h2 class="section-title">#PROJRECTS</h2>
-                    <h2 class="section-title">#PROJRECTS</h2>
-                </div>
+            <div class="marquee" wb-data="marquee" duration="15"
+                data-texts='["PROJECTS","PROJECTS","PROJECTS","PROJECTS"]'>
+                <div class="marquee-content"></div>
+            </div>
             </div>
             <div class="projects-grid">
                 <!-- Project 1: Feeling -->
@@ -270,31 +225,20 @@
     <!-- Footer -->
     <footer>
         <section id="section3" class="CONTACT">
-            <div class="footer-content">
-                <div class="section-title-wrapper">
-                    <h2 class="section-title">#CONTACT</h2>
-                    <h2 class="section-title">#CONTACT</h2>
-                    <h2 class="section-title">#CONTACT</h2>
-                </div>
-                <p class="footer-text">
-                    Convallis diam nisl vulputate rhoncus neque bibendum. Amet euismod arcu non semper eu rhoncus dolor
-                    amet
-                    sed.met euismod arcu
-                </p>
+            <div class="marquee" wb-data="marquee" duration="25"
+                data-texts='["CONTACT", "CONTACT", "CONTACT", "CONTACT"]'>
+                <div class="marquee-content"></div>
             </div>
+        </section>
+        <p class="footer-text">
+            Convallis diam nisl vulputate rhoncus neque bibendum. Amet euismod arcu non semper eu rhoncus dolor
+            amet
+            sed.met euismod arcu
+        </p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
-    <script>
-        // Simple menu toggle for mobile/desktop
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-            menuToggle.addEventListener('click', function (e) {
-                navMenu.classList.toggle('open');
-            });
-        });
-    </script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -343,7 +287,103 @@
     <script>
         const line = document.querySelector('svg line');
         console.log(line.getTotalLength());
+    </script>
 
+    <!-- Marquee Animation Script -->
+    <script>
+        const initMarquee = (marqueeElement) => {
+            if (!marqueeElement) {
+                return;
+            }
+
+            const duration = parseInt(marqueeElement.getAttribute("duration"), 10) || 5;
+            const textsData = marqueeElement.getAttribute("data-texts");
+            const texts = textsData ? JSON.parse(textsData) : ["Default Text"];
+
+            // marquee-content에 텍스트 동적 생성
+            const marqueeContent = marqueeElement.querySelector('.marquee-content');
+            if (!marqueeContent) {
+                return;
+            }
+
+            // 기존 내용 제거
+            marqueeContent.innerHTML = '';
+
+            // 텍스트 배열로부터 span 요소 생성
+            texts.forEach(text => {
+                const span = document.createElement('span');
+                span.textContent = text;
+                marqueeContent.appendChild(span);
+            });
+
+            const marqueeContentClone = marqueeContent.cloneNode(true);
+            marqueeElement.append(marqueeContentClone);
+
+            let tween;
+
+            const playMarquee = () => {
+                let progress = tween ? tween.progress() : 0;
+                tween && tween.progress(0).kill();
+                const width = parseInt(
+                    getComputedStyle(marqueeContent).getPropertyValue("width"),
+                    10
+                );
+
+                const gap = parseInt(
+                    getComputedStyle(marqueeContent).getPropertyValue("column-gap"),
+                    10
+                );
+
+                const distanceToTranslate = -1 * (gap + width);
+
+                tween = gsap.fromTo(
+                    marqueeElement.children,
+                    { x: 0 },
+                    { x: distanceToTranslate, duration, ease: "none", repeat: -1 }
+                );
+                tween.progress(progress);
+            };
+            playMarquee();
+
+            function debounce(func) {
+                var timer;
+                return function (e) {
+                    if (timer) clearTimeout(timer);
+                    timer = setTimeout(
+                        () => {
+                            func();
+                        },
+                        500,
+                        e
+                    );
+                };
+            }
+
+            window.addEventListener("resize", debounce(playMarquee));
+        };
+
+        const initAllMarquees = () => {
+            // 모든 marquee 요소를 찾아서 각각 초기화
+            const marquees = document.querySelectorAll('[wb-data="marquee"]');
+            marquees.forEach(marquee => {
+                initMarquee(marquee);
+            });
+        };
+
+        // DOM이 로드된 후 marquee 초기화
+        document.addEventListener("DOMContentLoaded", function () {
+            // 기존 메뉴 토글 코드
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            if (menuToggle && navMenu) {
+                menuToggle.addEventListener('click', function (e) {
+                    navMenu.classList.toggle('open');
+                });
+            }
+
+            // marquee 초기화
+            initAllMarquees();
+        });
     </script>
 
 </body>
